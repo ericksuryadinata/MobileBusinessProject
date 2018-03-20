@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     package="com.proesd.layout">
+=======
+    package="com.ericksurya.layout">
+>>>>>>> 6547381de4e0e74226a0bc716d12bf4de8b34ff7
 
     <application
         android:allowBackup="true"

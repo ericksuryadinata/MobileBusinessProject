@@ -3,7 +3,11 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
+<<<<<<< HEAD
         applicationId "com.proesd.layout"
+=======
+        applicationId "com.ericksurya.layout"
+>>>>>>> 6547381de4e0e74226a0bc716d12bf4de8b34ff7
         minSdkVersion 21
         targetSdkVersion 26
         versionCode 1
