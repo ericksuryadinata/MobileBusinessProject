@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.proesd.inputoutput.ActivityInputOutput">
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/inputText"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputText"
+        android:id="@+id/textView"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:text="proses"
+        android:id="@+id/prosesBtn"
+        />
+
+</RelativeLayout>
