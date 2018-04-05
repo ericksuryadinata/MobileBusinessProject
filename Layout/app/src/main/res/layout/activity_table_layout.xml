@@ -1,94 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.proesd.layout.LinearLayoutVertical">
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:orientation="horizontal"
+
+    <TableRow
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent" >
 
         <TextView
             android:text="NBI"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView"
-            android:layout_weight="1" />
+            android:id="@+id/textView" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText"
-            android:layout_weight="0.88" />
+            android:id="@+id/editText" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
+    </TableRow>
+    <TableRow
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent" >
 
         <TextView
             android:text="Nama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView2"
-            android:layout_weight="1" />
+            android:id="@+id/textView2" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText2"
-            android:layout_weight="1.15" />
-    </LinearLayout>
+            android:id="@+id/editText2" />
 
-    <LinearLayout
-        android:orientation="horizontal"
+    </TableRow>
+    <TableRow
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent" >
 
         <TextView
             android:text="Alamat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView3"
-            android:layout_weight="1" />
+            android:id="@+id/textView3" />
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText3"
-            android:layout_weight="1.29" />
-    </LinearLayout>
+            android:id="@+id/editText3" />
 
-    <LinearLayout
-        android:orientation="horizontal"
+    </TableRow>
+    <TableRow
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent" >
 
         <Button
             android:text="Simpan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button2"
-            android:layout_weight="1" />
+            android:id="@+id/button2" />
 
         <Button
             android:text="Tampil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button"
-            android:layout_weight="1" />
-    </LinearLayout>
-
-</android.support.v7.widget.LinearLayoutCompat>
+            android:id="@+id/button" />
+    </TableRow>
+</TableLayout>
