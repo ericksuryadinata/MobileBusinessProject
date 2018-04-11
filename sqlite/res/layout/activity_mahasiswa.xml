@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbarStyle="outsideOverlay"
+    tools:context=".Mahasiswa" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NBI" />
+
+            <EditText
+                android:id="@+id/edNbi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberSigned" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama" />
+
+            <EditText
+                android:id="@+id/edNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat" />
+
+            <EditText
+                android:id="@+id/edAlamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPostalAddress" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jurusan" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Spinner
+                    android:id="@+id/spJurusan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/rbLaki"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laki-laki" />
+
+                    <RadioButton
+                        android:id="@+id/rbPerempuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Perempuan" />
+
+                    <RadioButton
+                        android:id="@+id/rbTidakahu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tidak Tahu" />
+                </RadioGroup>
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/Nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hobi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <CheckBox
+                    android:id="@+id/cbRenang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Renang" />
+
+                <CheckBox
+                    android:id="@+id/cbBola"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sepak Bola" />
+
+                <CheckBox
+                    android:id="@+id/cbBalapan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Balapan" />
+
+                <CheckBox
+                    android:id="@+id/cbSilat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Silat" />
+
+                <CheckBox
+                    android:id="@+id/cbLukis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Melukis" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Lahir" />
+
+            <Button
+                android:id="@+id/tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <!-- <ImageButton -->
+            <!--
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pilih" />
+
+
+            -->
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Foto" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btFoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih Foto" />
+
+                <EditText
+                    android:id="@+id/edFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="Foto" />
+
+            </LinearLayout>
+        </TableRow>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/btLihat"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cari" />
+
+                <Button
+                    android:id="@+id/btSimpan"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tambah" />
+
+                <Button
+                    android:id="@+id/btUbah"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ubah" />
+
+                <Button
+                    android:id="@+id/btHapus"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hapus" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/dbtxEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@null" />
+
+            <HorizontalScrollView
+                android:id="@+id/HorizontalScrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableLayout
+                    android:id="@+id/tabel4data"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TableRow
+                        android:id="@+id/tableRow9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/dbtxNbi"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="NBI" />
+
+                        <TextView
+                            android:id="@+id/dbtxNama"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Nama" />
+
+                        <TextView
+                            android:id="@+id/dbtxAlamat"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Alamat" />
+
+                        <TextView
+                            android:id="@+id/dbtxJurusan"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="Jurusan" />
+
+                        <TextView
+                            android:id="@+id/dbtxKelamin"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Jenis Kelamin" />
+
+                        <TextView
+                            android:id="@+id/dbtxHobi"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Hobi" />
+
+                        <TextView
+                            android:id="@+id/dbtxTanggal"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Tanggal Lahir" />
+
+                        <TextView
+                            android:id="@+id/dbtxNamaFile"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Nama File" />
+
+                    </TableRow>
+                </TableLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+    </TableLayout>
+
+</ScrollView>
