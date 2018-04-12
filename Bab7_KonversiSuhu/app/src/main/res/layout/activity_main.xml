@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.proesd.bab7_konversisuhu.MainActivity">
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="75dp"
+        android:text="hello" />
+
+    <TextView
+        android:id="@+id/masukan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hello"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="masukan" />
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/masukan"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/cel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/EditText01"
+        android:text="cel"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/EditText01" >
+
+        <RadioButton
+            android:id="@+id/RadioButton01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reamur"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/RadioButton02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fahrenheit" />
+
+        <RadioButton
+            android:id="@+id/RadioButton03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kelvin" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="calc"
+        android:onClick="@string/buttonHandler"
+        android:layout_below="@+id/RadioGroup01"
+        android:layout_marginLeft="100dp" />
+
+</RelativeLayout>

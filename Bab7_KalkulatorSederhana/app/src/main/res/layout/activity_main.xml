@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.proesd.bab7_kalkulatorsederhana.MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Angka 1 : " />
+
+            <EditText
+                android:id="@+id/angka1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Angka 2 : " />
+
+            <EditText
+                android:id="@+id/angka2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:text="" />
+        </TableRow>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="#FF909090" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="#FF909090" />
+
+        <!--TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/tambah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="7dp"
+                android:gravity="left|center_vertical"
+                android:tag="reset all"
+                android:text=" +" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="7dp"
+                android:gravity="left|center_vertical"
+                android:tag="reset all"
+                android:text="Reset" />
+        </TableRow-->
+    </TableLayout>
+
+    <!--TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:text="Hasil : "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" /-->
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Hasil : "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/TextView"
+        android:layout_marginTop="35dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <Button
+        android:id="@+id/tambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout1"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/TextView"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/kurang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout1"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/TextView"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/kali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tambah"
+        android:layout_marginTop="18dp"
+        android:layout_toLeftOf="@+id/TextView"
+        android:text="x" />
+
+    <Button
+        android:id="@+id/bagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kurang"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/TextView"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kali"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:tag="reset all"
+        android:text="Reset" />
+
+</RelativeLayout>

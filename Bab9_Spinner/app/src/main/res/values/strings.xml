@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Bab9_Spinner</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="agama">
+        <item>ISLAM</item>
+        <item>KRISTEN</item>
+        <item>HINDU</item>
+    </string-array>
+
+</resources>
