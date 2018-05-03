@@ -31,7 +31,7 @@ public class DatabaseManager {
 
     private static final String NAMA_DB = "databasebiodata";// nama database
     private static final String NAMA_TABEL = "biodata";// nama tabel
-    private static final int DB_VERSION =4;
+    private static final int DB_VERSION = 5;
     //CREATE TABLE hobiku (_id integer PRIMARY KEY autoincrement, nama text,hobi text)
     private static final String CREATE_TABLE = "create table "+NAMA_TABEL+" ("+ROW_NBI+" integer PRIMARY KEY, "+ROW_NAMA+" text,"
             +ROW_ALAMAT+" text,"+ROW_KELAMIN+" text,"+ROW_JURUSAN+" text,"+ROW_HOBI+" text,"

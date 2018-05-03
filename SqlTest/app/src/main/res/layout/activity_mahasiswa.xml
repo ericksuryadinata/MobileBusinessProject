@@ -427,12 +427,6 @@
                             android:text="Nama File" />
 
                         <TextView
-                            android:id="@+id/dbtxIpk"
-                            android:layout_width="100dp"
-                            android:layout_height="wrap_content"
-                            android:text="IPK" />
-
-                        <TextView
                             android:id="@+id/dbtxTahunLulus"
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
@@ -443,6 +437,12 @@
                             android:layout_width="100dp"
                             android:layout_height="wrap_content"
                             android:text="Tahun Wisuda" />
+
+                        <TextView
+                            android:id="@+id/dbtxIpk"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="IPK" />
 
                         <TextView
                             android:id="@+id/dbtxJumlahSaudara"
